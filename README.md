@@ -1,5 +1,3 @@
-# didactic-spork
-
 ## Setup
 
 Requires `npm`. To set up project run:
