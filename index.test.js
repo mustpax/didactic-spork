@@ -1,14 +1,16 @@
-function map(array, fn) {
-  let ret = [];
-  for (let item of array) {
-    ret.push(fn(item));
-  }
-  return ret;
+// Write a function that returns the number of true in an array
+//
+// ex. countTrue([true, false]) -> 1
+function countTrue(array) {
+  // YOUR CODE HERE
 }
 
-test("map function applies given function to each element in array", () => {
-  const array = [1, 2, 3];
-  const double = (num) => num * 2;
-  const result = map(array, double);
-  expect(result).toEqual([2, 4, 6]);
+test("countTrue()", () => {
+  expect(countTrue([])).toEqual(0);
+  expect(countTrue([false, false, false, false])).toEqual(0);
+  expect(countTrue([true, false, false, false])).toEqual(1);
+  expect(countTrue([true, false, false, true])).toEqual(2);
+  expect(countTrue([true, false, false, true, true, true, true])).toEqual(5);
+  expect(countTrue([1])).toEqual(0);
+  expect(countTrue(["true"])).toEqual(0);
 });
