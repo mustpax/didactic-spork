@@ -25,6 +25,7 @@ function countItem(item, array) {
   // YOUR CODE HERE
 }
 
+return;
 test("countItem()", () => {
   expect(countItem(1, [])).toEqual(0);
   expect(countItem(false, [])).toEqual(0);
